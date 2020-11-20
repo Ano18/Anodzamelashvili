@@ -21,10 +21,11 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "you missed your Lastname", Toast.LENGTH_SHORT).show();
         } else if (age.getText().toString().isEmpty()) {
             Toast.makeText(this, "you missed your Age", Toast.LENGTH_SHORT).show();
+        } else if (Age <=1) {
+            Toast.makeText(this, "please,input your real age", Toast.LENGTH_SHORT).show();
         } else if (Age < 18) {
             Toast.makeText(this, "you are under Age", Toast.LENGTH_SHORT).show();
-        } else if (Age < 1) {
-            Toast.makeText(this, "please,input your real age", Toast.LENGTH_SHORT).show();
+
         } else {
             Toast.makeText(this, "You sign up succesfully", Toast.LENGTH_SHORT).show();
         }
