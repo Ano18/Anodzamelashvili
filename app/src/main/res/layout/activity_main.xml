@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6FA9D8"
     tools:context=".MainActivity">
 
     <EditText
@@ -14,6 +15,8 @@
         android:ems="10"
         android:hint="FirstName"
         android:inputType="textPersonName"
+        android:textColor="#F8F3F3"
+        android:textColorHint="#080B20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.407"
@@ -28,6 +31,7 @@
         android:ems="10"
         android:hint="Lastname"
         android:inputType="textPersonName"
+        android:textColorHint="#060917"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.407"
@@ -42,6 +46,7 @@
         android:ems="10"
         android:hint="Age"
         android:inputType="number"
+        android:textColorHint="#0A0C1B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.407"
@@ -53,7 +58,7 @@
         android:id="@+id/radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RadioButton"
+        android:text="Admin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.43"
@@ -67,18 +72,14 @@
         android:layout_height="wrap_content"
         android:onClick="signUp"
         android:text="SignUp"
+        android:textColorHighlight="#652727"
+        android:textColorHint="#FFF6F6"
+        android:textColorLink="#C5C5C5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioButton"
         app:layout_constraintVertical_bias="0.441" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="130dp"></LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
